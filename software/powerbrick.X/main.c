@@ -30,14 +30,15 @@ void main() {
     INTCONbits.GIE = 1;
 
 
-    PWM_B_TRIS = 0;
+    PWM_A_TRIS = 0;
+
     led_set_mode(ON);
     pwm_set(0);
     for(i=0; i < 900; i++) for(j=0; j < 100; j++);
     pwm_set(30);
     led_set_mode(OFF);
     for(i=0; i < 900; i++) for(j=0; j < 100; j++);
-    pwm_set(70);
+    pwm_set(-30);
     led_set_mode(FAST);
     for(i=0; i < 900; i++) for(j=0; j < 100; j++);
     pwm_set(200);

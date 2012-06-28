@@ -42,6 +42,12 @@
         <makeCustomizationAlternativeFileToLoad></makeCustomizationAlternativeFileToLoad>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
       </makeCustomizationType>
+      <HI-TECH-COMP>
+      </HI-TECH-COMP>
+      <HI-TECH-LINK>
+      </HI-TECH-LINK>
+      <PICkit2PlatformTool>
+      </PICkit2PlatformTool>
     </conf>
   </confs>
 </configurationDescriptor>

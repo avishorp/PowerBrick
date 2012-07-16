@@ -12,6 +12,7 @@ unsigned char led_counter;
 
 void led_init()
 {
+
     // Enable timer functionality on Timer0
     T0CS = 0;
 
@@ -39,6 +40,7 @@ void led_set_mode(led_mode_type newmode)
 
 void led_interrupt_handler()
 {
+    
     switch(led_mode) {
         case ON:
             led_state = 0;
@@ -64,5 +66,6 @@ void led_interrupt_handler()
     }
 
     LED_GPIO = led_state;
+     
 }
 

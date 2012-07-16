@@ -39,7 +39,7 @@ void pwm_init()
 
 void pwm_set(int value)
 {
-    if (value > 0) {
+    if (value >= 0) {
         // Forward direction
         if (direction != DIR_FORWARD) {
             PWM_A_TRIS = 0;
@@ -53,7 +53,7 @@ void pwm_set(int value)
             PWM_A_TRIS = 1;
             PWM_B_TRIS = 0;
         }
-        CCPR1L = ~(value & 0xff);
+        CCPR1L = ((-value) & 0xff);
     }
 }
 
